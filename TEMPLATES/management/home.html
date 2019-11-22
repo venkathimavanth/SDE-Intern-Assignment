@@ -1,0 +1,67 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" >
+<style>
+.jumbotron {
+  height: 300px;
+  text-align: center;
+  background-color: #f4511e;
+  opacity: 0.5;
+  padding: 14px 16px;
+  font-size:40px;
+  color: #fff;
+}
+</style>
+<style>
+body {
+  background-image: url(https://markaylatimer.com/wp-content/uploads/2016/06/grey-website-background-illusionapparel2.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="{% url 'management:Home' %}">Home</a></li>
+  <li><a href="{% url 'management:Entry' %}">Entry Registration</a></li>
+  <li><a href="{% url 'management:Exit' %}">Exit Checkpoint</a></li>
+  <li><a href="#about">Contact</a></li>
+</ul>
+<div class="jumbotron text-center">
+  <h1>Check Point</h1>
+  <p>Safty first....</p>
+</div>
+</body>
+</html>
